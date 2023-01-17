@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :employees, only: [:index]
   resources :employers, only: [:index]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-resources :blogs, only: [:index, :show, :create, :destroy]
+
 resources :job_listings, only: [:index, :show, :create, :update, :destroy]
   # Defines the root path route ("/")
   # root "articles#index"

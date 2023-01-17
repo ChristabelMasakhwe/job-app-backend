@@ -6,5 +6,4 @@ class Employee < ApplicationRecord
 
     has_many :employers, through: :job_listings
     has_many :job_listings
-    has_many :blogs
 end
