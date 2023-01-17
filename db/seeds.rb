@@ -1,10 +1,7 @@
 
 
 puts "start seeding"
-blogs = Blog.create([{image_url:"https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&dl=nick-morrison-FHnnjk1Yj7Y-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb", title:"The Best Entry-level jobs", content:Faker::Lorem.paragraphs(number: 25, supplemental: true)},
-    {image_url:"https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&dl=andrew-neel-cckf4TsHAuw-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb", title:"Tips for relocating for a job", content:Faker::Lorem.paragraphs(number: 20, supplemental: true)},
-    {image_url:"https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&dl=desola-lanre-ologun-IgUR1iX0mqM-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb", title:"How to stand out in an interview", content:Faker::Lorem.paragraphs(number: 35, supplemental: true)}])
-   
+
  job_listings = JobListing.create([
     {job_title: "Senior Program Officer", category_id: 1, description: "Monitors and analyzes programme/project development and implementation; reviews relevant documents and reports; identifies problems and issues to be addressed and proposes corrective actions; liaises with relevant parties; identifies and tracks follow-up actions", qualification: "at least a bachelor's degree in a field such as human resources, accounting, business management, business administration or communications", deadline:"3rd January 2023", employee_id: 1, employer_id: 1},
     {job_title: "Full stack developer",  category_id: 2, description: "Designing user interactions on websites, developing servers, and databases for website functionality, and coding for mobile platforms.", qualification: "Degree in computer science.Strong organizational and project management skills.Proficiency with fundamental front-end languages such as HTML, CSS, and JavaScript.Familiarity with JavaScript frameworks such as Angular JS, React, and Amber.Proficiency with server-side languages such as Python, Ruby, Java, PHP, and .Net.Familiarity with database technology such as MySQL, Oracle, and MongoDB.Excellent verbal communication skills. Good problem-solving skills. Attention to detail.", deadline:"7th February 2023", employee_id: 2, employer_id: 2},
