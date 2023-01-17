@@ -4,7 +4,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 # config.hosts << "job-app-production.up.railway.app"
 
-  config.hosts.clear
+config.hosts << /[a-z0-9\-]+\.ap\.ngrok\.io/
 
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
