@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'index#index'
+ 
   resources :categories, only: [:index, :show]
   resources :employees, only: [:index]
   resources :employers, only: [:index]
