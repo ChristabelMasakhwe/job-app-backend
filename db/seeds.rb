@@ -1,4 +1,4 @@
-
+require 'faker'
 
 puts "start seeding"
 blogs = Blog.create([{image_url:"https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&dl=nick-morrison-FHnnjk1Yj7Y-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb", title:"The Best Entry-level jobs", content:Faker::Lorem.paragraphs(number: 25, supplemental: true)},
