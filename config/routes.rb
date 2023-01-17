@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
 resources :job_listings, only: [:index, :show, :create, :update, :destroy]
   # Defines the root path route ("/")
-  # root "articles#index"
+  root "articles#index"
   post "/signup", to: "employees#create"
   # post "/signup", to: "employers#create"
   get "/me", to: "employees#show"
